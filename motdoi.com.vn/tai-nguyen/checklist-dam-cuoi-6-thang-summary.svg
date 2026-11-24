@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Checklist chuẩn bị đám cưới 6 tháng với 120 đầu việc</title>
+  <desc id="desc">Sáu giai đoạn chuẩn bị đám cưới từ sáu tháng trước đến sau ngày cưới, mỗi giai đoạn gồm hai mươi đầu việc.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8f5"/>
+      <stop offset="1" stop-color="#f6e9e5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a94f64"/>
+      <stop offset="1" stop-color="#d18491"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#7b3e4c" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#background)"/>
+  <circle cx="1030" cy="105" r="180" fill="#d18491" opacity=".08"/>
+  <circle cx="90" cy="1390" r="210" fill="#a94f64" opacity=".06"/>
+
+  <text x="600" y="105" text-anchor="middle" fill="#a94f64" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4">MỘT ĐỜI</text>
+  <text x="600" y="175" text-anchor="middle" fill="#382d30" font-family="Georgia, serif" font-size="58" font-weight="700">Checklist chuẩn bị đám cưới</text>
+  <text x="600" y="230" text-anchor="middle" fill="#6e5f63" font-family="Arial, sans-serif" font-size="30">6 tháng · 120 đầu việc · 6 giai đoạn</text>
+  <rect x="440" y="265" width="320" height="8" rx="4" fill="url(#accent)"/>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(90 330)">
+      <rect width="490" height="270" rx="28" fill="#fff"/>
+      <circle cx="62" cy="62" r="34" fill="#a94f64"/>
+      <text x="62" y="72" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">01</text>
+      <text x="115" y="57" fill="#382d30" font-size="27" font-weight="700">6–5 tháng trước</text>
+      <text x="115" y="91" fill="#a94f64" font-size="19" font-weight="700">ĐỊNH HƯỚNG</text>
+      <text x="40" y="145" fill="#6e5f63" font-size="21">Ngân sách · ngày cưới · danh sách khách</text>
+      <text x="40" y="183" fill="#6e5f63" font-size="21">Địa điểm · ekip · phong cách chủ đạo</text>
+      <text x="40" y="235" fill="#a94f64" font-size="22" font-weight="700">20 đầu việc</text>
+    </g>
+    <g transform="translate(620 330)">
+      <rect width="490" height="270" rx="28" fill="#fff"/>
+      <circle cx="62" cy="62" r="34" fill="#b45c70"/>
+      <text x="62" y="72" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">02</text>
+      <text x="115" y="57" fill="#382d30" font-size="27" font-weight="700">4 tháng trước</text>
+      <text x="115" y="91" fill="#b45c70" font-size="19" font-weight="700">CHỐT NHÀ CUNG CẤP</text>
+      <text x="40" y="145" fill="#6e5f63" font-size="21">Ảnh cưới · trang phục · trang trí · âm thanh</text>
+      <text x="40" y="183" fill="#6e5f63" font-size="21">Thực đơn · nhẫn cưới · hợp đồng dịch vụ</text>
+      <text x="40" y="235" fill="#b45c70" font-size="22" font-weight="700">20 đầu việc</text>
+    </g>
+    <g transform="translate(90 635)">
+      <rect width="490" height="270" rx="28" fill="#fff"/>
+      <circle cx="62" cy="62" r="34" fill="#bf697b"/>
+      <text x="62" y="72" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">03</text>
+      <text x="115" y="57" fill="#382d30" font-size="27" font-weight="700">3–2 tháng trước</text>
+      <text x="115" y="91" fill="#bf697b" font-size="19" font-weight="700">THIỆP VÀ KHÁCH MỜI</text>
+      <text x="40" y="145" fill="#6e5f63" font-size="21">Hoàn thiện ảnh · tạo thiệp online · chia nhóm</text>
+      <text x="40" y="183" fill="#6e5f63" font-size="21">Cá nhân hóa lời mời · gửi thiệp · theo dõi RSVP</text>
+      <text x="40" y="235" fill="#bf697b" font-size="22" font-weight="700">20 đầu việc</text>
+    </g>
+    <g transform="translate(620 635)">
+      <rect width="490" height="270" rx="28" fill="#fff"/>
+      <circle cx="62" cy="62" r="34" fill="#c97887"/>
+      <text x="62" y="72" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">04</text>
+      <text x="115" y="57" fill="#382d30" font-size="27" font-weight="700">1 tháng trước</text>
+      <text x="115" y="91" fill="#c97887" font-size="19" font-weight="700">RÀ SOÁT VẬN HÀNH</text>
+      <text x="40" y="145" fill="#6e5f63" font-size="21">Kịch bản · sơ đồ bàn · phương án thời tiết</text>
+      <text x="40" y="183" fill="#6e5f63" font-size="21">Xác nhận khách · thanh toán · phân công người thân</text>
+      <text x="40" y="235" fill="#c97887" font-size="22" font-weight="700">20 đầu việc</text>
+    </g>
+    <g transform="translate(90 940)">
+      <rect width="490" height="270" rx="28" fill="#fff"/>
+      <circle cx="62" cy="62" r="34" fill="#d18491"/>
+      <text x="62" y="72" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">05</text>
+      <text x="115" y="57" fill="#382d30" font-size="27" font-weight="700">1 tuần và ngày cưới</text>
+      <text x="115" y="91" fill="#d18491" font-size="19" font-weight="700">THỰC THI</text>
+      <text x="40" y="145" fill="#6e5f63" font-size="21">Tổng duyệt · vật dụng · đón khách · timeline</text>
+      <text x="40" y="183" fill="#6e5f63" font-size="21">Giữ sức khỏe · kiểm soát đầu mối · tận hưởng</text>
+      <text x="40" y="235" fill="#d18491" font-size="22" font-weight="700">20 đầu việc</text>
+    </g>
+    <g transform="translate(620 940)">
+      <rect width="490" height="270" rx="28" fill="#fff"/>
+      <circle cx="62" cy="62" r="34" fill="#da919c"/>
+      <text x="62" y="72" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">06</text>
+      <text x="115" y="57" fill="#382d30" font-size="27" font-weight="700">Sau ngày cưới</text>
+      <text x="115" y="91" fill="#da919c" font-size="19" font-weight="700">HOÀN TẤT</text>
+      <text x="40" y="145" fill="#6e5f63" font-size="21">Cảm ơn khách · đối soát · lưu ảnh và video</text>
+      <text x="40" y="183" fill="#6e5f63" font-size="21">Đánh giá nhà cung cấp · hoàn tất giấy tờ</text>
+      <text x="40" y="235" fill="#da919c" font-size="22" font-weight="700">20 đầu việc</text>
+    </g>
+  </g>
+
+  <rect x="160" y="1280" width="880" height="112" rx="56" fill="#382d30"/>
+  <text x="600" y="1328" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="27" font-weight="700">Xem đầy đủ, in PDF và tải Excel miễn phí</text>
+  <text x="600" y="1368" text-anchor="middle" fill="#f1ccd3" font-family="Arial, sans-serif" font-size="23">motdoi.com.vn/tai-nguyen/checklist-dam-cuoi-6-thang</text>
+  <text x="600" y="1450" text-anchor="middle" fill="#6e5f63" font-family="Arial, sans-serif" font-size="20">Nguồn: Một Đời · Cập nhật 2026</text>
+</svg>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Logo ZenLove động — "công nghệ" (kiểu màn quét), chu kỳ 2.6s:
+  1. Tia quét chạy từ trên xuống, màu gradient đổ đầy logo theo tia quét.
+  2. Nháy glitch tách kênh xanh / hồng vài khung hình rồi ổn định.
+  3. Giữ logo hoàn chỉnh; cuối vòng nháy glitch lần nữa và mờ đi.
+  Cùng hình/màu với logo.svg (viewBox nới 6px mỗi phía để lớp glitch lệch kênh không bị cắt).
+  CSS nằm trong SVG nên dùng được qua <img src>; máy bật giảm chuyển động thì
+  logo đứng yên ở trạng thái đã đổ màu.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6 -6 231.54 191.27">
+  <defs>
+    <style>
+      .zl-root {
+        animation: zl-root-fade 2.6s infinite;
+      }
+
+      /* Màu đổ đầy theo tia quét: clip rect kéo dài từ trên xuống */
+      .zl-reveal-rect {
+        transform-box: fill-box;
+        transform-origin: top;
+        animation: zl-reveal 2.6s infinite;
+      }
+
+      .zl-scanline {
+        animation: zl-scan 2.6s infinite;
+      }
+
+      .zl-glitch {
+        opacity: 0;
+      }
+
+      .zl-glitch--cyan {
+        animation: zl-glitch-cyan 2.6s infinite steps(1, end);
+      }
+
+      .zl-glitch--pink {
+        animation: zl-glitch-pink 2.6s infinite steps(1, end);
+      }
+
+      .zl-solid {
+        animation: zl-jitter 2.6s infinite steps(1, end);
+      }
+
+      @keyframes zl-root-fade {
+        0%,
+        86% {
+          opacity: 1;
+        }
+        96%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes zl-reveal {
+        0% {
+          transform: scaleY(0);
+          animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+        }
+        30%,
+        100% {
+          transform: scaleY(1);
+        }
+      }
+
+      @keyframes zl-scan {
+        0% {
+          opacity: 1;
+          transform: translateY(-10px);
+          animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+        }
+        30% {
+          opacity: 1;
+          transform: translateY(184px);
+        }
+        34%,
+        100% {
+          opacity: 0;
+          transform: translateY(184px);
+        }
+      }
+
+      /* Glitch: dịch từng khung (steps) cho cảm giác giật số */
+      @keyframes zl-glitch-cyan {
+        0%,
+        33% {
+          opacity: 0;
+          transform: none;
+        }
+        34% {
+          opacity: 0.85;
+          transform: translate(-6px, 1px);
+        }
+        36% {
+          opacity: 0.85;
+          transform: translate(4px, -2px);
+        }
+        38% {
+          opacity: 0.85;
+          transform: translate(-3px, 0);
+        }
+        40%,
+        83% {
+          opacity: 0;
+          transform: none;
+        }
+        84% {
+          opacity: 0.85;
+          transform: translate(5px, -1px);
+        }
+        86% {
+          opacity: 0.85;
+          transform: translate(-4px, 2px);
+        }
+        88%,
+        100% {
+          opacity: 0;
+          transform: none;
+        }
+      }
+
+      @keyframes zl-glitch-pink {
+        0%,
+        33% {
+          opacity: 0;
+          transform: none;
+        }
+        34% {
+          opacity: 0.85;
+          transform: translate(6px, -1px);
+        }
+        36% {
+          opacity: 0.85;
+          transform: translate(-4px, 2px);
+        }
+        38% {
+          opacity: 0.85;
+          transform: translate(3px, 0);
+        }
+        40%,
+        83% {
+          opacity: 0;
+          transform: none;
+        }
+        84% {
+          opacity: 0.85;
+          transform: translate(-5px, 1px);
+        }
+        86% {
+          opacity: 0.85;
+          transform: translate(4px, -2px);
+        }
+        88%,
+        100% {
+          opacity: 0;
+          transform: none;
+        }
+      }
+
+      @keyframes zl-jitter {
+        0%,
+        33% {
+          transform: none;
+        }
+        35% {
+          transform: translate(2px, 0);
+        }
+        37% {
+          transform: translate(-2px, 0);
+        }
+        39%,
+        83% {
+          transform: none;
+        }
+        85% {
+          transform: translate(-2px, 0);
+        }
+        87%,
+        100% {
+          transform: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+        }
+
+        .zl-scanline {
+          opacity: 0;
+        }
+      }
+    </style>
+    <linearGradient id="zl-logo-gradient-bottom" x1="69.22" y1="88.84" x2="142.89" y2="185.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6ea1"/>
+      <stop offset="1" stop-color="#ff9f7c"/>
+    </linearGradient>
+    <linearGradient id="zl-logo-gradient-top" x1="76.46" y1="-5.97" x2="149.83" y2="90.24" xlink:href="#zl-logo-gradient-bottom"/>
+    <linearGradient id="zl-scan-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ff6ea1" stop-opacity="0"/>
+    </linearGradient>
+    <path id="zl-p-bottom" d="M16.96,179.27c-15.41,0-22.8-18.91-11.48-29.36l25.59-23.63,11.18-10.32,40.9-37.74v11.27c0,14.62,11.85,26.46,26.46,26.46h109.93l-68.57,63.31H16.96Z"/>
+    <path id="zl-p-top" d="M201.85,0c15.41,0,22.8,18.91,11.48,29.36l-25.59,23.63-11.18,10.32-40.9,37.74v-11.27c0-14.62-11.85-26.46-26.46-26.46H.06L68.63,0h133.22Z"/>
+    <clipPath id="zl-reveal-clip">
+      <rect class="zl-reveal-rect" x="-6" y="-6" width="231.54" height="191.27"/>
+    </clipPath>
+    <clipPath id="zl-logo-clip">
+      <use href="#zl-p-bottom" xlink:href="#zl-p-bottom"/>
+      <use href="#zl-p-top" xlink:href="#zl-p-top"/>
+    </clipPath>
+  </defs>
+
+  <g class="zl-root">
+    <!-- Glitch tách kênh (nằm dưới lớp màu chính) -->
+    <g class="zl-glitch zl-glitch--cyan" fill="#22d3ee">
+      <use href="#zl-p-bottom" xlink:href="#zl-p-bottom"/>
+      <use href="#zl-p-top" xlink:href="#zl-p-top"/>
+    </g>
+    <g class="zl-glitch zl-glitch--pink" fill="#ff3d8b">
+      <use href="#zl-p-bottom" xlink:href="#zl-p-bottom"/>
+      <use href="#zl-p-top" xlink:href="#zl-p-top"/>
+    </g>
+
+    <!-- Logo màu, lộ dần theo tia quét -->
+    <g class="zl-solid" clip-path="url(#zl-reveal-clip)">
+      <use href="#zl-p-bottom" xlink:href="#zl-p-bottom" fill="url(#zl-logo-gradient-bottom)"/>
+      <use href="#zl-p-top" xlink:href="#zl-p-top" fill="url(#zl-logo-gradient-top)"/>
+    </g>
+
+    <!-- Tia quét, chỉ sáng trong phạm vi hình logo -->
+    <g clip-path="url(#zl-logo-clip)">
+      <rect class="zl-scanline" x="-6" y="-6" width="231.54" height="12" fill="url(#zl-scan-gradient)"/>
+    </g>
+  </g>
+</svg>
